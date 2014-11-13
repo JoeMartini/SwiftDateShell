@@ -88,24 +88,3 @@ public func -(date:Date, days:Int) -> Date {
 public func -(leftDate:Date, rightDate:Date) -> Int {
     return Int(leftDate.originalDate.timeIntervalSinceDate(rightDate.originalDate)/dayInterval)
 }
-
-/*
-public enum Month : Int {
-    case January = 1, February, March, April, May, June, July, August, September, October, November, December
-}
-public enum MonthCN : String {
-    case January = "一月", February = "二月", March = "三月", April = "四月", May = "五月", June = "六月", July = "七月", August = "八月", September = "九月", October = "十月", November = "十一月", December = "十二月"
-}
-public enum Weekday : Int {
-    case Sunday = 1, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
-}
-public enum WeekdayCN : String {
-    case Sunday = "星期日", Monday = "星期一", Tuesday = "星期二", Wednesday = "星期三", Thursday = "星期四", Friday = "星期五", Saturday = "星期六"
-}
-public enum RollDay : Int {
-    case Zero = 0, One = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty, TwentyOne, TwentyTwo, TwentyThree, TwentyFour, TwentyFive, TwentySix, TwentySeven, TwentyEight, TwentyNine, Thirty, ThirtyOne
-}
-public enum numCN:String {
-    case zero = "零", one = "一", two = "二", three = "三", four = "四", five = "五", six = "六", seven = "七", eight = "八", nine = "九", ten = "十"
-}
-*/
