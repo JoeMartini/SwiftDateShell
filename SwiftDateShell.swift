@@ -38,7 +38,7 @@ public class Date {
         self.year = tmpCalendar.component(NSCalendarUnit.YearCalendarUnit, fromDate: self.originalDate)
         self.month = tmpCalendar.component(NSCalendarUnit.MonthCalendarUnit, fromDate: self.originalDate)
         self.day = tmpCalendar.component(NSCalendarUnit.DayCalendarUnit, fromDate: self.originalDate)
-        self.weekday = tmpCalendar.component(NSCalendarUnit.WeekdayCalendarUnit, fromDate: self.originalDate)
+        self.weekday = ((tmpCalendar.component(NSCalendarUnit.CalendarUnitWeekday, fromDate: self.originalDate) == 1) ? 7 : tmpCalendar.component(NSCalendarUnit.CalendarUnitWeekday, fromDate: self.originalDate) - 1 ) // 切换一周第一天
     }
     
     convenience init (year:Int, month:Int, day:Int) {
